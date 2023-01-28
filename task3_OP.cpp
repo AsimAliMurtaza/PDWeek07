@@ -20,9 +20,9 @@ void upperTriangle(int rows)
     int j = 0;
     int k = 0;
 
-    for(i=1; i<=rows; i = i + 1)
+    for(i=1; i<=rows/2; i = i + 1)
     {
-        for(j = rows; j>=i; j = j - 1)
+        for(j = rows/2; j>=i; j = j - 1)
         {
             cout << " ";
         }
@@ -41,14 +41,14 @@ void lowerTriangle(int rows)
     int j = 0;
     int k = 0;
 
-    for(i=1; i<=rows; i = i + 1)
+    for(i=1; i<=rows/2; i = i + 1)
     {
         for(j = 1; j<=i; j = j + 1)
         {
             cout << " ";
         }
 
-        for(k = rows; k>=i; k = k - 1)
+        for(k = rows/2; k>=i; k = k - 1)
         {
             cout << "*";
         }
